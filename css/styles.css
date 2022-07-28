@@ -37,8 +37,30 @@ p {
 	margin: 0;
 }
 
-button {
-	padding: 0;
+.button {
+	display: block;
+	min-width: 200px;
+	min-height: 50px;
+	margin: 0 auto;
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	color: var(--wight-txt-cl);
+	background-color: var(--accent-cl);
+
+	transition: background-color var(--transition);
+}
+
+.button:hover,
+.button:focus {
+	background-color: #188CE8;
 }
 
 img {
@@ -211,32 +233,6 @@ a {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-}
-
-.main-btn {
-	display: block;
-	min-width: 200px;
-	min-height: 50px;
-	margin: 0 auto;
-
-	font-family: inherit;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.88;
-	letter-spacing: 0.06em;
-	cursor: pointer;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	border: 0;
-	color: var(--wight-txt-cl);
-	background-color: var(--accent-cl);
-
-	transition: background-color var(--transition);
-}
-
-.main-btn:hover,
-.main-btn:focus {
-	background-color: #188CE8;
 }
 
 /* Qualities */
@@ -602,7 +598,7 @@ a {
 	margin-bottom: 9px;
 }
 
-.join-text {
+.footer-title {
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -619,6 +615,42 @@ a {
 
 .join-icon {
 	fill: #ffffff;
+}
+
+.subscribe-form {
+	display: flex;
+	gap: 12px;
+	margin-left: auto;
+}
+
+.subscribe-input {
+	padding: 0 16px;
+	width: 358px;
+	height: 50px;
+
+	letter-spacing: 0.03em;
+	color: var(--wight-txt-cl);
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+.subscribe-input::placeholder {
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	align-self: flex-end;
+}
+
+.send-icon {
+	fill: var(--wight-txt-cl)
 }
 
 /* Модальне вікно */
@@ -674,6 +706,10 @@ a {
 	border-radius: 50%;
 	background: #FFFFFF;
 	cursor: pointer;
+}
+
+.close-btn:hover .close-icon {
+	fill: var(--accent-cl)
 }
 
 .close-icon {
