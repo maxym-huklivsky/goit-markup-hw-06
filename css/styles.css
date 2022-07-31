@@ -754,6 +754,7 @@ a {
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
 	color: var(--secondary-txt-cl);
+	transition: transform var(--transition);
 }
 
 .modal-input:focus+.modal-label,
@@ -787,6 +788,11 @@ a {
 	height: 40px;
 	padding-left: 42px;
 	padding-right: 10px;
+
+	outline: transparent;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	transition: border-color var(--transition);
 }
 
 .modal-input.comment {
@@ -799,8 +805,14 @@ a {
 	left: 12px;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: fill var(--transition);
 }
 
 .modal-input:focus~.modal-icon {
 	fill: var(--accent-cl);
+}
+
+.modal-input:focus {
+	border: 1px solid var(--accent-cl);
+	border-radius: 4px;
 }
