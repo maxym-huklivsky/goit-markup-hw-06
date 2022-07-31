@@ -343,25 +343,25 @@
 				</svg>
 			</button>
 
-			<form name="modal-form">
-				<p>Оставьте свои данные, мы вам перезвоним</p>
-				<label>
-					<div>Имя</div>
-					<input type="text" name="user-name">
+			<form class="modal-form" name="modal-form">
+				<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+				<label class="modal-wrap">
+					<input class="modal-input" type="text" name="user-name" placeholder=" ">
+					<span class="modal-label">Имя</span>
 				</label>
-				<label>
-					<div>Телефон</div>
-					<input type="tel" name="user-tel">
+				<label class="modal-wrap">
+					<input class="modal-input" type="tel" name="user-tel" placeholder=" ">
+					<span class="modal-label">Телефон</span>
 				</label>
-				<label>
-					<div>Почта</div>
-					<input type="email" name="user-mail">
+				<label class="modal-wrap">
+					<input class="modal-input" type="email" name="user-mail" placeholder=" ">
+					<span class="modal-label">Почта</span>
 				</label>
-				<label>
-					<div>Комментарий</div>
-					<textarea name="comment"></textarea>
+				<label class="modal-wrap comment">
+					<textarea class="modal-input comment" name="comment" placeholder="Введите текст"></textarea>
+					<span class="modal-label comment">Комментарий</span>
 				</label>
-				<label>
+				<label class="modal-wrap">
 					<input type="checkbox" name="agree">
 					<span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
 				</label>
