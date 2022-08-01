@@ -755,6 +755,7 @@ a {
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
 	color: var(--secondary-txt-cl);
+	user-select: none;
 	transition: transform var(--transition), color var(--transition);
 }
 
@@ -778,6 +779,7 @@ a {
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 	transition: color var(--transition);
+	user-select: none;
 }
 
 .modal-input.comment:not(:focus)::placeholder {
