@@ -799,8 +799,11 @@ a {
 	outline: transparent;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	user-select: none;
 	transition: border-color var(--transition);
+}
+
+.modal-input::placeholder {
+	user-select: none;
 }
 
 .modal-input.comment {
