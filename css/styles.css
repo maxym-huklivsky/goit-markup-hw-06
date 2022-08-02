@@ -779,7 +779,6 @@ a {
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 	transition: color var(--transition);
-	user-select: none;
 }
 
 .modal-input.comment:not(:focus)::placeholder {
@@ -800,6 +799,7 @@ a {
 	outline: transparent;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	user-select: none;
 	transition: border-color var(--transition);
 }
 
