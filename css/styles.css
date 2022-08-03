@@ -835,14 +835,14 @@ a {
 	border-radius: 4px;
 }
 
-.agree-icon>.icon-check {
+.icon-check {
 	opacity: 0;
 	transition: opacity var(--transition);
 }
 
-.agree-icon>.icon-uncheck {
+.icon-uncheck {
 	opacity: 1;
-	transition: opacity var(--transition);
+	transition: opacity var(--transition), fill var(--transition);
 }
 
 .checkbox:checked+.agree-icon>.icon-check {
@@ -868,4 +868,8 @@ a {
 .checkbox-link {
 	text-decoration-line: underline;
 	color: var(--accent-cl);
+}
+
+.checkbox:focus+.agree-icon .icon-uncheck {
+	fill: var(--accent-cl);
 }
