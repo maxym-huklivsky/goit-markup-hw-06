@@ -873,7 +873,10 @@ a {
 	color: var(--accent-cl);
 }
 
-.checkbox:focus+.agree-icon .icon-uncheck,
+.checkbox:focus+.agree-icon .icon-uncheck {
+	fill: var(--accent-cl);
+}
+
 .checkbox:hover+.agree-icon .icon-uncheck {
 	fill: var(--accent-cl);
 }
