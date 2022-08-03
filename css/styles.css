@@ -54,6 +54,7 @@ p {
 	border: none;
 	color: var(--wight-txt-cl);
 	background-color: var(--accent-cl);
+	user-select: none;
 
 	transition: background-color var(--transition);
 }
@@ -515,6 +516,7 @@ a {
 	font-size: 18px;
 	line-height: 156%;
 	letter-spacing: 0.03em;
+	user-select: none;
 
 	color: #FFFFFF;
 	background-color: rgba(33, 150, 243, 0.9);
@@ -639,6 +641,7 @@ a {
 .subscribe-input::placeholder {
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
+	user-select: none;
 }
 
 .subscribe-btn {
@@ -870,6 +873,7 @@ a {
 	color: var(--accent-cl);
 }
 
-.checkbox:focus+.agree-icon .icon-uncheck {
+.checkbox:focus+.agree-icon .icon-uncheck,
+.checkbox:hover+.agree-icon .icon-uncheck {
 	fill: var(--accent-cl);
 }
